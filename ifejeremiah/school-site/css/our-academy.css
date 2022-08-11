@@ -1,0 +1,363 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+section{
+    margin-top: 90px;
+}
+.container{
+    width: 80%;
+    margin: 18px auto;
+
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: 12px auto;
+}
+
+.img-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-single-box{
+    padding: 20px;
+}
+
+
+/* ===== Elite Section === */
+.elites h1, .tour h1, .staff h2{
+    margin: 18px auto;
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+/* .elites-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.elites-box-img{
+    width: 30%;
+    height: 45vh;
+    margin: 10px;
+    }  */
+
+
+/* ===== Tour Section === */
+/* 
+.tour-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
+
+.tour-box h2{
+    padding: 4px;
+    text-transform: uppercase;
+}
+
+.tour-box p{
+    padding: 4px;
+    margin-right: 60px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.tour-box img{
+    width: 32vw;
+    height: 60vh;
+} */
+
+.tour-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour-box h2{
+    padding: 4px;
+    text-transform: uppercase;
+}
+
+.tour-box-card{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 12px;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 12px 23px;
+    background: rgb(62, 25, 191);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn:hover{
+    /* background: rgb(233, 160, 160);
+    color:rgb(62, 25, 191); */
+    padding: 12px 25px;
+    transition: ease .3s;
+}
+
+
+/* ===== Staff Section === */
+
+.staff{
+    background-color: #a9a9a9;
+    }
+.staff-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    /* display: flex;
+    padding: 23px;
+    justify-content: space-around;
+    background-color: #a9a9a9; */
+}
+
+
+.staff-box img{
+width: 250px;
+height: 250px;
+border-radius: 50%;
+margin-right:auto ;
+margin-left:auto ;
+margin-right:auto ;
+margin-bottom:20px ;
+}
+
+.staff-box-1, .staff-box-2, .staff-box-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 18px;
+    
+}
+
+.staff-box .icons{
+    /* color: rgb(62, 25, 191); */
+    font-size: 23px;
+    padding: 4px;
+    transition: .4s;
+}
+
+.staff-box .icons1:hover{
+    
+    font-size: 30px;
+    padding: 8px;
+    transition: ease .3s;
+}
+.staff-box .icons2:hover{
+    
+    font-size: 30px;
+    padding: 8px;
+    transition: ease .3s;
+}
+
+.staff-box .icons3:hover{
+    
+    font-size: 30px;
+    padding: 8px;
+    transition: ease .3s;
+}
+/* .staff-box h4{
+    color: #fff;
+} */
+
+.staff-box p{
+    text-align: center;
+    line-height: 1.8em;
+    color: #fff;
+}
+
+.staff-box-1 h4, .staff-box-1 p{
+    color: #fff;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+
+/* ===== testimonies Section === */
+
+
+.testimonies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonies h1{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    }
+
+.testimonies h1, .testimonies p{
+    text-align: center;
+    }
+
+
+
+.testimonies .ts-img-container{
+overflow: hidden;
+border: 10px solid white;
+}
+
+.img-container{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.testimonies .ts-img-container img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+/* ===== Booking Section === */
+
+.booking .booking-box{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.booking .booking-box h1, p{
+    padding: 2px;
+    margin: 0px auto 10px auto;
+    
+}
+
+.booking .booking-box h1, .e-library-box h1{
+    font-size: 1.5em;
+}
+
+
+/* ===== E-Library Section === */
+.e-library-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.e-library-box h1, p{
+    padding: 2px;
+    margin: 0px auto 10px auto;
+    text-align: center;
+}
+
+/* @media only screen and(max-width:760px) {
+    .elites-box{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+        flex-wrap: wrap;
+            
+    }
+    
+    .elites-box-img{
+        display: block;
+               
+    }
+    .elites-box-img img{
+        width: 400px
+        display: block;
+    }
+    }
+    
+} */
+
+
+@media only screen and (max-width:760px) {
+
+    .img-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .tour-box{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.tour-box-card{
+    width: 100%
+}
+
+
+.tour-box-card h1, .tour-box-card p, .tour-box-card btn{
+    text-align: center;
+    width: 100%;
+}
+.tour-box-card img{
+   display: block;
+}
+
+
+}

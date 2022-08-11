@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500..900&display=swap')
+@import variables
+@import utilities
+
+// Main Container
+.main-container
+  position: relative
+  background: #fff
+  transition: .5s
+  right: 0
+
+  &.slide-left
+    right: 60%
+
+  // Top Level Section 
+  .main-section
+    position: relative
+    height: 100vh
+    color: #fff
+
+    // Background Image
+    .img
+      height: 100%
+
+    // Header and Section A Container 
+    .first-section
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+
+      // Section A
+      .section-a
+
+        .body
+          width: 94%
+          margin: 0 auto
+        .primary-btn
+          background: #000
+
+  // Con-Section
+  .con-section
+    .img
+      overflow: hidden
+      img
+        filter: brightness(70%)
+        transition: .5s
+      img:hover
+        filter: brightness(80%)
+        transform: scale(1.1)
+
+  // Con-Header
+  .con-header
+    padding: 24px 10px
+
+  // Left
+  .left
+    a
+      margin: 0 10px
+      padding: 6px 14px
+      border-radius: .25rem
+      text-transform: uppercase
+      font-size: .94rem
+      transition: .25s
+
+      &.active
+        background: #9e9a9a
+        padding: 6px 20px
+
+      &:hover
+        background: #9e9a9a
+        color: #fff
+
+    .dropdown-menu a
+      margin: 0
+      border-radius: 0
+
+  // Menu
+  .con-menu
+    i
+      display: none
+      padding: 20px
+      &.active
+        display: inline-block
+
+  // Section B
+  .section-b
+    background: $light-background-color
+    .title h1
+      font-size: 1.4rem
+    .con-icon i
+      font-size: 3rem
+      margin-bottom: 1.4rem
+      color: #686868
+
+  // Section D
+  .section-d, .section-i
+    background: $light-background-color
+    .carousel
+      .carousel-inner
+        width: 80%
+        margin: 0 auto
+        h2
+          font-weight: 700
+
+  // Section E
+  .section-e
+    ul
+      margin: 10px 0
+      li
+        list-style-type: disc
+
+  // Section G
+  .section-g
+    background: #333
+    color: #fff
+
+  // Footer
+  .con-footer
+    background: #333
+    color: #fff
+    padding: 60px 0
+
+// Slider
+.con-slider .slider
+  height: 100vh
+  background: #000000f0
+  width: 60%
+  position: fixed
+  top: 0
+  right: 0
+  z-index: -1
+  transition: .25s
+  animation: pull-right
+  color: rgb(201 201 201)
+  padding: 100px 20px
+  & li
+    border-bottom: 1px solid #ccc
+    padding: 12px
+    font-size: 1.2rem
+  & li.last
+    border-bottom: 0
+
+// Media Queries
+@media (min-width:992px)
+  .main-container
+    // Section A
+    .section-a
+      .body
+        width: 100%
+
+    // Con-header
+    .con-header
+      padding: 24px 0
